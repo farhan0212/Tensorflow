@@ -1,3 +1,6 @@
+npm i react react-webcam tensorflow coco-ssd // install ini dahulu sebelum menjalankan kodingannya
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
