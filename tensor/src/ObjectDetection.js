@@ -37,15 +37,15 @@ const ObjectDetection = () => {
   };
 
   // Ambil snapshot webcam sebagai Blob (JPEG)
-  const getSnapshot = () => {
-    const canvas = document.createElement("canvas");
-    const video = webcamRef.current.video;
-    canvas.width = video.videoWidth;
-    canvas.height = video.videoHeight;
-    const ctx = canvas.getContext("2d");
-    ctx.drawImage(video, 0, 0);
-    return new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg"));
-  };
+  // const getSnapshot = () => {
+  //   const canvas = document.createElement("canvas");
+  //   const video = webcamRef.current.video;
+  //   canvas.width = video.videoWidth;
+  //   canvas.height = video.videoHeight;
+  //   const ctx = canvas.getContext("2d");
+  //   ctx.drawImage(video, 0, 0);
+  //   return new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg"));
+  // };
 
   // Upload hasil deteksi ke backend
   const uploadDetection = async (prediction, imageBlob) => {
@@ -61,7 +61,7 @@ const ObjectDetection = () => {
         height: prediction.bbox[3],
       })
     );
-    formData.append("image", imageBlob, "snapshot.jpg");
+    // formData.append("image", imageBlob, "snapshot.jpg");
 
     try {
       const url = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
@@ -85,16 +85,16 @@ const ObjectDetection = () => {
       setPredictions(preds);
       renderPredictions(preds);
 
-      const imageBlob = await getSnapshot();
+      // const imageBlob = await getSnapshot();
 
       // Contoh: upload hanya prediksi pertama, bisa loop kalau mau semua
-      if (preds.length > 0) {
-        await uploadDetection(preds[0], imageBlob);
-      }
+  //     if (preds.length > 0) {
+  //       await uploadDetection(preds[0], imageBlob);
+  //     }
 
-      setIsProcessing(false);
-    }
-  }, [model]);
+  //     setIsProcessing(false);
+  //   }
+  // }, [model]);
 
   return (
     <div className="relative w-full h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
