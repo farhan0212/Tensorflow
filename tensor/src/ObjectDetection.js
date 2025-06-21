@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import { useRef, useEffect, useState, useCallback } from "react";
 import Webcam from "react-webcam";
 import * as cocoSsd from "@tensorflow-models/coco-ssd";
 import "@tensorflow/tfjs";
@@ -11,12 +11,10 @@ const ObjectDetection = () => {
   const [predictions, setPredictions] = useState([]);
   const [isProcessing, setIsProcessing] = useState(false);
 
-  // Load the model once
   useEffect(() => {
     cocoSsd.load().then(setModel);
   }, []);
 
-  // Render bounding boxes dan label di canvas
   const renderPredictions = (preds) => {
     const ctx = canvasRef.current.getContext("2d");
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);

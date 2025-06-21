@@ -1,73 +1,72 @@
-npm i react react-webcam tensorflow coco-ssd // install ini dahulu sebelum menjalankan kodingannya
+npm i react react-webcam tensorflow coco-ssd // install ini terlebih dahulu sebelum menjalankan kodenya
 
+# Memulai dengan Create React App
 
-# Getting Started with Create React App
+Proyek ini dibuat dengan [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Skrip yang Tersedia
 
-## Available Scripts
-
-In the project directory, you can run:
+Di direktori proyek, Anda dapat menjalankan:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Menjalankan aplikasi dalam mode pengembangan.\
+Buka [http://localhost:3000](http://localhost:3000) untuk melihatnya di browser Anda.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Halaman akan memuat ulang saat Anda melakukan perubahan.\
+Anda juga dapat melihat kesalahan lint di konsol.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Menjalankan test runner dalam mode watch interaktif.\
+Lihat bagian tentang [menjalankan tes](https://facebook.github.io/create-react-app/docs/running-tests) untuk informasi lebih lanjut.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Membangun aplikasi untuk produksi ke folder `build`.\
+Build akan mengoptimalkan React untuk performa terbaik.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Build sudah diminifikasi dan nama file sudah termasuk hash.\
+Aplikasi Anda siap untuk dideploy!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lihat bagian tentang [deployment](https://facebook.github.io/create-react-app/docs/deployment) untuk informasi lebih lanjut.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Catatan: ini adalah operasi satu arah. Setelah Anda `eject`, Anda tidak bisa kembali!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Jika Anda tidak puas dengan alat build dan konfigurasi yang ada, Anda dapat menjalankan `eject` kapan saja. Perintah ini akan menyalin semua file konfigurasi dan dependensi ke proyek Anda sehingga Anda memiliki kontrol penuh.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Semua perintah kecuali `eject` masih akan berfungsi, tetapi akan menunjuk ke skrip yang sudah disalin sehingga Anda bisa menyesuaikannya. Setelah ini, Anda bertanggung jawab sendiri.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Anda tidak harus menggunakan `eject`. Fitur yang disediakan sudah cukup untuk deployment kecil dan menengah, dan Anda tidak wajib menggunakan fitur ini. Namun, kami memahami bahwa alat ini tidak akan berguna jika Anda tidak bisa menyesuaikannya saat sudah siap.
 
-## Learn More
+## Pelajari Lebih Lanjut
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Anda dapat mempelajari lebih lanjut di [dokumentasi Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Untuk belajar React, kunjungi [dokumentasi React](https://reactjs.org/).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Bagian ini telah dipindahkan ke sini: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Menganalisis Ukuran Bundle
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Bagian ini telah dipindahkan ke sini: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Membuat Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Bagian ini telah dipindahkan ke sini: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### Konfigurasi Lanjutan
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Bagian ini telah dipindahkan ke sini: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Bagian ini telah dipindahkan ke sini: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### `npm run build` gagal diminify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bagian ini telah dipindahkan ke sini: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
